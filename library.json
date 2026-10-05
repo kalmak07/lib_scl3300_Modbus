@@ -1,0 +1,20 @@
+{
+    "name": "lib_scl3300_Modbus",
+    "version": "1.0.0",
+    "description": "Master library for SCL3300 inclinometer over Modbus RTU (RS-485)",
+    "keywords": "inclinometer, scl3300, modbus, rs485, stm32",
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*",
+    "headers": "inc_master.h",
+    "build": {
+        "srcFilter": ["+<*>"]
+    },
+    "examples": [
+        {
+            "name": "STM32 HAL",
+            "base": "examples/stm32_hal",
+            "files": ["main.c", "inc_port.c", "inc_port.h"]
+        }
+    ]
+}
